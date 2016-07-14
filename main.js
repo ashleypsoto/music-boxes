@@ -1,3 +1,4 @@
+/*function for clicking*/
 var cNote = document.getElementById("c_note");
 
 $("#c").click(function(){
@@ -46,3 +47,36 @@ $("#b").click(function(){
   bNote.currentTime = 0;
   bNote.play();
 });
+
+/* Function for keyboard*/
+$(document).keydown(function(e){
+  if(e.key == "q"){
+    cNote.currentTime = 0;
+    cNote.play();
+  }
+  if(e.key == "w"){
+    dNote.currentTime = 0;
+    dNote.play();
+  }
+  if(e.key == "e"){
+    eNote.currentTime = 0;
+    eNote.play();
+  }
+  if(e.key == "r"){
+    fNote.currentTime = 0;
+    fNote.play();
+  }
+  if(e.key == "t"){
+    gNote.currentTime = 0;
+    gNote.play();
+  }
+  if(e.key == "y"){
+    aNote.currentTime = 0;
+    aNote.play();
+  }
+  if(e.key == "u"){
+    bNote.currentTime = 0;
+    bNote.play();
+  }
+
+})
